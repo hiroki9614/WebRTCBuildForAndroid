@@ -1,0 +1,11 @@
+# arm64-v8a
+prefix=$HOME/work/webrtc/android/src/third_party/android_toolchain/ndk
+libdir=${prefix}/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21/
+includedir=${prefix}/include
+
+Name: OpenH264
+Description: OpenH264 is a codec library which supports H.264 encoding and deco>
+Version: 2.3.0
+Libs: -L${libdir} -lopenh264
+Libs.private: -lstdc++ -lpthread -lm
+Cflags: -I${includedir}
